@@ -4,4 +4,5 @@ function isOdd(num){
 }
 # 只使用数组内容一次
 array.shift()
+
 array.pop()
