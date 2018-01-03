@@ -11,3 +11,7 @@ function isOdd(num){
 # 只使用数组内容一次
 ```array.shift()```
 ```array.pop()```
+# 将字符串反转
+```
+str.split("").reverse().join("");
+```
