@@ -29,3 +29,15 @@ var maxSequence = function(arr){
   return result;
 }
 ```
+# Xbonacci
+```
+//Xbonacci Sequence
+function Xbonacci(signature,n){
+  const X = signature.length;
+  let result = signature.slice(0,n);
+  while(result.length < n){
+  	result.push(result.slice(-X).reduce((a,b) => a+b));
+  }
+  return result;
+}
+```
