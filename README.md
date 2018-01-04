@@ -15,3 +15,17 @@ function isOdd(num){
 ```
 str.split("").reverse().join("");
 ```
+# Maximum subarray sum
+```
+//maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+// should be 6: [4, -1, 2, 1]
+var maxSequence = function(arr){
+  let result = 0;
+  arr.reduce((sum,num)=>{
+  	sum += num;
+  	result = Math.max(result,sum);
+  	return Math.max(sum,0);
+  },0)
+  return result;
+}
+```
