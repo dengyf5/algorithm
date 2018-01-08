@@ -59,3 +59,11 @@ function decomposition(n){
 	return result;
 }
 ```
+# toBase
+```
+function toBase(num,target){
+	let base = target.length;
+	if(num < base){return "" + target[num];}
+	return toBase(Math.floor(num/base),target) + target[num % base];
+}
+```
