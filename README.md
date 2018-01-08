@@ -41,3 +41,21 @@ function Xbonacci(signature,n){
   return result;
 }
 ```
+# 分解因数
+```
+function decomposition(n){
+	const result = {};
+	for(let i = 2; i <= n; i++){
+		if(n%i === 0){
+			if(result[i]){
+				result[i]++
+			}else{
+				result[i] = 1;
+			}
+			n /= i;
+			i--;
+		}
+	}
+	return result;
+}
+```
