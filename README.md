@@ -67,3 +67,17 @@ function toBase(num,target){
 	return toBase(Math.floor(num/base),target) + target[num % base];
 }
 ```
+# add two number in String
+```
+function add (a, b) {
+  var res = '', c = 0
+  a = a.split('')
+  b = b.split('')
+  while (a.length || b.length || c) {
+    c += ~~a.pop() + ~~b.pop()
+    res = c % 10 + res
+    c = c > 9
+  }
+  return res
+}
+```
