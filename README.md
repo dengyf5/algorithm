@@ -1,3 +1,5 @@
+Please move to [my blog](https://github.com/everbrez/everbrez.github.io).
+
 # 判断是否奇数
 ```
 function isOdd(num){
